@@ -1,0 +1,12 @@
+version: "3"
+services:
+  alibaba-rsocket-broker:
+    image: linuxchina/alibaba-rsocket-broker
+    container_name: rsocket-broker-server
+    ports:
+      - "9997:9997"
+      - "9998:9998"
+      - "9999:9999"
+	  
+# https://hub.docker.com/r/linuxchina/alibaba-rsocket-broker#!
+# https://github.com/alibaba/alibaba-rsocket-broker/blob/master/docker-compose.yml
